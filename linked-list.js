@@ -8,10 +8,15 @@ class LinkedListNode {
 class LinkedList {
   constructor() {
     // Your code here
+    this.head = null
+    this.length = 0
   }
 
   addToHead(val) {
     // Your code here
+    const newNode = new LinkedListNode(val, this.head)
+    this.head = newNode
+    this.length++
   }
 
   addToTail(val) {
